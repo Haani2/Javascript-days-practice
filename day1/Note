@@ -1,0 +1,4 @@
+guessing game
+So in this i revise:-
+=> you need to add script tag inside body not in head
+=> use p tag for innerHtml 
