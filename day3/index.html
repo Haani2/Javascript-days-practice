@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🛒 Shopping Cart</h1>
+
+    <!-- Cart Items -->
+    <div class="cart" id="cart">
+      <!-- 
+        JS will render cart items here
+        Example structure:
+
+        <div class="cart-item">
+          <span>Laptop</span>
+          <span>₹50000</span>
+          <span>Qty: 1</span>
+          <span>₹50000</span>
+        </div>
+      -->
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <div class="row">
+        <span>Subtotal</span>
+        <span id="subtotal">₹0</span>
+      </div>
+      <div class="row">
+        <span>GST (18%)</span>
+        <span id="gst">₹0</span>
+      </div>
+      <div class="row total">
+        <span>Total</span>
+        <span id="total">₹0</span>
+      </div>
+    </div>
+
+    <button id="calculateBtn">Calculate Total</button>
+  </div>
+
+  <!-- JS file (logic is yours 😄) -->
+  <script src="script.js"></script>
+</body>
+</html>
