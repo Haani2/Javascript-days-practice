@@ -27,4 +27,34 @@ cart.innerHTML=a;
 }
 renderCartItem();
 
+ function calculatesubtotal(){
+    const subtotalvalue=items.reduce((total,item)=>{
+        return total+item.price*item.Qtn;
+    },0);
+    
+    subtotal.innerHTML=`${subtotalvalue}`
+    return subtotalvalue;
+ }
+
  
+
+function calculategst(){
+    let gstvalue =calculatesubtotal()*(18/100);
+    gst.innerHTML=`${gstvalue}`;
+    return gstvalue;
+}
+
+
+
+function totalval(){
+    let totals=calculatesubtotal()+calculategst();
+    Total.innerHTML=`${totals}`
+
+}
+
+calculate.addEventListener("click",function(){
+     calculatesubtotal();
+     calculategst();
+     totalval();
+
+})
